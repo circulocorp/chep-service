@@ -1,0 +1,22 @@
+{
+	"name": "chep-service",
+	"version": "0.0.1",
+	"queue": "chep",
+	"description": "Chep sender service",
+	"author": "Mauricio Barrera",
+	"dev": {
+		"API_URL": "http://192.168.1.74:8080",
+        "RABBITMQ_URL": "192.168.1.75",
+		"secrets": true
+    },
+    "stage": {
+		"API_URL": "http://192.168.1.68:8080",
+        "RABBITMQ_URL": "192.168.1.70",
+		"secrets": true
+    },
+	"prod": {
+		"API_URL": "http://10.0.4.188:8080",
+        "RABBITMQ_URL": "10.0.4.100",
+		"secrets": true
+	}
+}

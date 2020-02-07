@@ -1,0 +1,8 @@
+pika==0.12.0
+datetime
+requests
+PydoNovosoft==1.1.4
+logging
+json-logging==0.0.10
+suds
+xmltodict
