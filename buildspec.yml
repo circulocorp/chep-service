@@ -13,7 +13,7 @@ phases:
   build:
     commands:
       - echo Build version $VERSION started on `date`
-      - docker build -t altotrack-service:$VERSION .
+      - docker build -t chep-service:$VERSION .
       - docker tag chep-service:$VERSION $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/chep-service:$VERSION
       - docker tag chep-service:$VERSION $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/chep-service:latest
   post_build:
