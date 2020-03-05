@@ -109,7 +109,7 @@ def fix_data(msg):
                          extra={'props': {"raw": bad, "app": config["name"], "label": config["name"]}})
     registro["movil"] = movil
     root["registro"] = registro
-    send(root, goods, bads)
+    send(root)
 
 
 def callback(ch, method, properties, body):
