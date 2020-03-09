@@ -23,7 +23,7 @@ env_cfg = config[os.environ["environment"]]
 url = env_cfg["API_URL"]
 rabbitmq = env_cfg["RABBITMQ_URL"]
 
-chep_url = "http://ws4.altotrack.com/WSPosiciones_Chep/WSPosiciones_Chep.svc"
+chep_url = "http://ws4.altotrack.com/WSPosiciones_Chep/WSPosiciones_Chep.svc?wsdl"
 
 if env_cfg["secrets"]:
     rabbit_user = Utils.get_secret("rabbitmq_user")
