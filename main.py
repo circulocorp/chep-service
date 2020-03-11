@@ -82,8 +82,8 @@ def fix_data(msg):
             mov["LOGGPS"] = "0"
             mov["puerta1"] = "0"
             mov["evento"] = "1"
-            mov["latitud"] = event["header"]["Latitude"]
-            mov["longitud"] = event["header"]["Longitude"]
+            mov["latitud"] = format(float(event["header"]["Latitude"]), '.6f')
+            mov["longitud"] = format(float(event["header"]["Longitude"]), '.6f')
             mov["direccion"] = event["header"]["Direction"]
             mov["velocidad"] = event["header"]["Speed"]
             mov["fecha"] = Utils.format_date(Utils.datetime_zone(Utils.utc_to_datetime(
