@@ -74,7 +74,7 @@ def fix_data(msg):
         obj = event["header"]
         vehicle = get_vehicle(obj["UnitId"])
         if vehicle is not None and "provider" in vehicle:
-            mov["proveedor"] = vehicle["provider"]
+            mov["proveedor"] = "TELCEL-GVT"
             mov["nombremovil"] = ""
             mov["patente"] = vehicle["Registration"]
             mov["ignicion"] = "1"
